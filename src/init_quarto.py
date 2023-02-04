@@ -69,7 +69,7 @@ if not args.existing_dir:
 if pathlib.Path(template).is_file():
     shutil.copy(template, pathlib.Path(project_dir,project_name+".qmd"))
 elif pathlib.Path(template).is_dir():
-    shutil.copytree(template,project_dir, dirs_exist_ok=True)
+    shutil.copytree(template,project_dir, dirs_exist_ok=True,ignore=shutil.ignore_patterns(".*"))
     shutil.move(project_dir.joinpath("template.qmd"), project_dir.joinpath(project_name+".qmd"))
 else:
     print("No such template")
