@@ -23,3 +23,17 @@ sh build.sh
 ```
 
 Copy dist/init_quarto to a directory under PATH (e.g. /usr/bin for Linux).
+
+## Usage
+### define project name by option.
+```
+init_quarto -n PROJECT_NAME
+```
+### define project name in interactive
+```
+init_quarto
+
+# Quarto Project Name?
+
+> PROJECT_NAME
+```
