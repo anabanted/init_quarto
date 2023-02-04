@@ -53,7 +53,7 @@ else:
 if args.template:
     template = pathlib.Path(args.template).resolve()
 else:
-    template = pathlib.Path(__file__).parents[1].joinpath("template").resolve()
+    template = pathlib.Path(__file__).parent.joinpath("template").resolve()
 
 # Make the project directory
 if not args.existing_dir:
