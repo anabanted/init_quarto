@@ -35,3 +35,11 @@ init_quarto
 # Quarto Project Name?
 > PROJECT_NAME
 ```
+### specify template
+You can use your favorite template with init_quarto by
+```
+init_quarto -t path/to/template
+```
+The template should be a qmd(quarto) file or a directory which include 'template.qmd'. Rmd and ipynb files are not used.
+
+Default template is [quarto-template](https://github.com/anabanted/quarto-template).
