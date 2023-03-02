@@ -8,7 +8,7 @@ pip install pyinstaller
 
 Clone this repository by
 ```
-git clone https://github.com/anabanted/init_quarto
+git clone --recursive https://github.com/anabanted/init_quarto
 ```
 or just download this repository.
 
